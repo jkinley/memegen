@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import MemeGen from './MemeGen'
+import MemeGen from './MemeContainer'
 
 function App() {
 
@@ -8,9 +8,8 @@ function App() {
 		<main>
 			
 			<Header title="MemeGen 2020" />
-			
-
 			<MemeGen />
+
 		</main>
 	)
 
