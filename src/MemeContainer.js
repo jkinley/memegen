@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import html2canvas from "html2canvas";
+import {Container} from '@material-ui/core'
 import MemeDisplay from './MemeDisplay'
 import MemeForm from './MemeForm'
-import {Container, Box} from '@material-ui/core'
-
 
 class MemeContainer extends Component {
+	// initialize state
 	state = {
 		topText: "",
 		bottomText: "",
@@ -75,17 +75,17 @@ class MemeContainer extends Component {
 	render() {
 		return (
 			<main>
-				<Container maxWidth="sm">
+				<Container maxWidth="md">
 
-					<Box padding="2rem">
-						<MemeDisplay data={this.state}/>
-					</Box>
+					<MemeDisplay data={this.state}/>
+					
 					<MemeForm
 						handleChange={this.handleChange}
 						generateLink={this.generateLink}
 						getRandomImg={this.getRandomImg}
 						data={this.state}
 					/>
+
 				</Container>
 			</main>
 		);

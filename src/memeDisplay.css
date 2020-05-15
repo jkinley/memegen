@@ -25,7 +25,6 @@
 
 .meme {
 	position: relative;
-	display: inline-block;
 }
 
 .meme > img {
